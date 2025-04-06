@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Artistas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Busca un Artista</h1>
+    <input type="text" id="artistaBuscar" placeholder="Ingresa el nombre del artista">
+    <button onclick="buscarArtista()">Buscar Artista</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Género</th>
+                <th>Imagen</th>
+                <th>Álbumes</th>
+            </tr>
+        </thead>
+        <tbody id="bodyTable"></tbody>
+    </table>
+
+    <script src="buscarArtista.js"></script>
+</body>
+</html>

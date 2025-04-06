@@ -1,0 +1,157 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://kpopfacts.com/wp-content/uploads/2021/09/COLDPLAY-X-BTS.jpg') no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover;
+    color: #fff;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #28a745;
+}
+
+/* Estilos para la tabla de artistas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+img {
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+}
+
+a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la pagina de detalles del artista */
+#artistDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#artistDetails img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#artistDetails h2 {
+    margin-top: 20px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.song-list {
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.song-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.song-list li a {
+    color: #28a745;
+}
+
+.song-list li a:hover {
+    text-decoration: underline;
+}
+
+#songCount {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Adaptabilidad */
+/* Permite que la interfaz se adapte a pantallas pequeñas, mejorando la visualización en móviles. */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    input[type="text"] {
+        width: 90%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    img {
+        width: 80px;
+    }
+
+    #artistDetails img {
+        width: 250px;
+    }
+}
